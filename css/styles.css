@@ -1,0 +1,36 @@
+﻿body {
+    padding-top: 10px;
+}
+header {
+    position: relative;
+    top:0;
+}
+header nav .navbar-brand img { 
+    position: absolute; 
+    top:15px;
+    left: 15px; 
+}
+header nav .navbar-brand span { 
+    padding-left: 200px;
+}
+header .hero {
+    position: relative;
+    width: 100%;
+    height: calc( 100vh - 30px );
+    overflow: hidden;
+}
+header .hero h1 {
+    position: relative;
+    top:50%;
+    margin:0 auto;
+    text-align: center;
+    color: white;    
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    z-index: 2;
+}
+header .hero img {
+    width: 100%;    
+}
+main {
+
+}
