@@ -1,4 +1,29 @@
-﻿body {
+﻿@font-face {
+    font-family: 'website';
+    src: 
+    url('../fonts/website.woff?wbsm4w') format('woff'),
+    url('../fonts/website.woff2?wbsm4w') format('woff2'),
+    url('../fonts/website.svg?wbsm4w#website') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+[class^="icon-website-"], [class*=" icon-website-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'website' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
     padding-top: 0;
 }
 header {
@@ -13,6 +38,8 @@ header nav .navbar-brand img {
     top:15px;
     left: 15px;
     max-width:100px;
+    height: auto;
+    border-radius: 5px;
 }
 header nav .navbar-brand span { 
     display: none;
@@ -37,6 +64,7 @@ header .hero h1 {
 }
 header .hero img {
     width: 100%;    
+    height: auto;
 }
 main .card .card-image {
     max-height:255px;
@@ -46,8 +74,68 @@ main .contact strong {
     float:left;
     width:100px;
 }
+.icon-website-chevron-up:before {
+    content: "\e90f";
+}
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    width: 50px;
+    height: 50px;
+    margin-left: -27px;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    background: #343a40;
+    color: white;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    z-index: 8;
+    cursor: pointer;
+}
+.scroll-to-top i {
+        padding:6px 8px 8px 8px;
+        border-radius: 100%;
+        background: transparent;
+        border:1px solid white;
+        color:white;
+}
+.scroll-to-top:hover {
+        background: green;
+        color: white;
+        border:0;
+        outline: none;
+        text-decoration: none;
+}
+.scroll .scroll-to-top {
+    display: block;
+}
 
-@media (min-width: 1024px) {
+@keyframes moveandscale {
+  0% {
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media (width >= 1024px) {
     header nav .navbar-brand img { 
         max-width:150px;
     }
@@ -62,6 +150,22 @@ main .contact strong {
         top: -20px;
         height: 100vh;
         overflow: hidden;
+    }
+    header .hero .carousel {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+    header .hero .carousel .carousel-indicators {
+        bottom: unset;
+        top: 85vh;
+    }
+    header .hero img {
+        display: block;
+        width:100%;
+        height: 100%;
+        animation-name:moveandscale;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
     }
     header .hero h1 {
         position: relative;
