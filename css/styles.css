@@ -1,28 +1,35 @@
 ﻿body {
-    padding-top: 10px;
+    padding-top: 0;
 }
 header {
     position: relative;
     top:0;
 }
+header .navbar-collapse {
+    margin-top: 100px;
+}
 header nav .navbar-brand img { 
     position: absolute; 
     top:15px;
-    left: 15px; 
+    left: 15px;
+    max-width:100px;
 }
 header nav .navbar-brand span { 
-    padding-left: 200px;
+    display: none;
 }
 header .hero {
     position: relative;
+    top: 55px;
     width: 100%;
-    height: calc( 100vh - 30px );
-    overflow: hidden;
+    background-color: dimgray;
 }
 header .hero h1 {
-    position: relative;
+    position: absolute;
     top:50%;
+    left: 0;
+    right: 0;
     margin:0 auto;
+    font-size: 2rem;;
     text-align: center;
     color: white;    
     text-shadow: 0 2px 4px rgba(0,0,0,0.6);
@@ -31,6 +38,33 @@ header .hero h1 {
 header .hero img {
     width: 100%;    
 }
-main {
+main .card .card-image {
+    max-height:255px;
+    overflow: hidden;
+}
+main .contact strong {
+    float:left;
+    width:100px;
+}
 
+@media (min-width: 1024px) {
+    header nav .navbar-brand img { 
+        max-width:150px;
+    }
+    header .navbar-collapse {
+        margin-top: 0;
+    }
+    header nav .navbar-brand span { 
+        display: inline;
+        padding-left: 180px;
+    }
+    header .hero {
+        top: -20px;
+        height: 100vh;
+        overflow: hidden;
+    }
+    header .hero h1 {
+        position: relative;
+        font-size: 4rem;
+    }
 }

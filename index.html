@@ -9,7 +9,6 @@
 </head>
 <body>
 <header>
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">
             <img src="images/logo.jpg" alt="Centro Português Essen">
@@ -27,75 +26,97 @@
             </ul>
         </div>
     </nav>
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <h1>Willkommen im Centro Português Essen</h1>
-        <picture>
-            <source media="(min-width:800px)" srcset="images/dyn/hero-1_1280x785.jpg">
-            <source media="(min-width:580px)" srcset="images/dyn/hero-1_640x427.jpg">
-            <img src="images/dyn/hero-1_1920x1280.jpg" alt="Hero 1">
-        </picture>
-    </section>
+        <h1>Bemvindos, Willkommen</h1>
+        <div id="index-carousel-large" class="carousel carousel-fade slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators horizontal">
+                <li data-target="#index-carousel-large" data-slide-to="0" class="active">01</li>
+                <li data-target="#index-carousel-large" data-slide-to="1">02</li>
+                <li data-target="#index-carousel-large" data-slide-to="2">03</li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item mb-0 active">
+                    <picture>
+                        <source media="(min-width:800px)" srcset="images/dyn/hero-1_1280x785.jpg">
+                        <source media="(min-width:580px)" srcset="images/dyn/hero-1_640x427.jpg">
+                        <img src="images/dyn/hero-1_1920x1280.jpg" alt="Portugal">
+                    </picture>
+                </div> 
+                <div class="carousel-item mb-0">
+                    <picture>
+                        <source media="(min-width:800px)" srcset="images/dyn/hero-2_1280x785.jpg">
+                        <source media="(min-width:580px)" srcset="images/dyn/hero-2_640x427.jpg">
+                        <img src="images/dyn/hero-2_1920x1280.jpg" alt="Portugal">
+                    </picture>
+                </div> 
+                <div class="carousel-item mb-0">
+                    <picture>
+                        <source media="(min-width:800px)" srcset="images/dyn/hero-4_1280x785.jpg">
+                        <source media="(min-width:580px)" srcset="images/dyn/hero-4_640x427.jpg">
+                        <img src="images/dyn/hero-4_1920x1280.jpg" alt="Portugal">
+                    </picture>
+                </div> 
+            </div> 
+        </div> 
+    </section>  
 </header>
-  <!-- About Section -->
-  <section id="about" class="container py-5">
-    <h2 class="mb-4">Über uns</h2>
-    <p>
-      Das Centro Português Essen ist ein portugiesische kultureller Treffpunkt für die  Gemeinschaft in Essen 
-      und Umgebung.
-      Wir fördern Kultur, Tradition, Zusammenhalt und bieten vielfältige Aktivitäten für Groß und Klein.
-    <br>
-      Wir sind ein ehrenamtlicher Verein, der die portugiesische Kultur in Essen
-       ein wenig lebendig werden lassen möchte.
-    </p>
-  </section>
+<main>
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <h2 class="my-4 py-4">Über uns</h2>
+        <p>
+        Das Centro Português Essen ist ein portugiesische kultureller Treffpunkt für die Gemeinschaft in Essen 
+        und Umgebung.
+        <br>
+        Wir fördern Kultur, Tradition, Zusammenhalt und bieten vielfältige Aktivitäten für Groß und Klein.        
+        </p>
+    </section>
 
-  <!-- Events Section -->
-  <section id="events" class="bg-light py-5">
-    <div class="container">
-      <h2 class="mb-4">Veranstaltungen</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <!-- <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Event 1"> -->
-            <div class="card-body">
-              <h5 class="card-title">Kultureller Abend</h5>
-              <p class="card-text">Musik, Tanz und kulinarische Highlights aus Portugal.</p>
+    <!-- Events Section -->
+    <section id="events" class="bg-light py-5">
+        <div class="container">
+            <h2 class="mb-4">Veranstaltungen</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Kultureller Abende</h5>
+                            <p class="card-text">Musik und kulinarische Highlights aus Portugal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <!-- <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Event 2"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">Gemeinschaftstreffen</h5>
+                            <p class="card-text">Ein gemütliches Beisammensein für alle Mitglieder & Gäste.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <!-- <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Event 3"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">Sprach & Kochkurse</h5>
+                            <p class="card-text">Portugiesisch Sprach & Koch Kurse für Anfänger.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <!-- <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Event 2"> -->
-            <div class="card-body">
-              <h5 class="card-title">Gemeinschaftstreffen</h5>
-              <p class="card-text">Ein gemütliches Beisammensein für die ganze Familie.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <!-- <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Event 3"> -->
-            <div class="card-body">
-              <h5 class="card-title">Sprachkurse</h5>
-              <p class="card-text">Portugiesisch-Kurse für Anfänger und Fortgeschrittene.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="container py-5">
-    <h2 class="mb-4">Kontakt</h2>
-    <p><strong>Adresse:</strong> Girardetstr. 21
-        45131 Essen
-    </p>
-    <p><strong>Email:</strong> portugalessen@gmail.com</p>
-    <p><strong>Telefon:</strong> +49 (0)201 780488</p>
-  </section>
-
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5 contact">
+        <h2 class="mb-4">Kontakt</h2>
+        <p>
+            <strong>Adresse:</strong> Girardetstr. 21, 45131 Essen
+        </p>
+        <p><strong>Email:</strong> portugalessen@gmail.com</p>
+        <p><strong>Telefon:</strong> +49 (0)201 780488</p>
+    </section>
+</main>
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     © 2025 Centro Português Essen
