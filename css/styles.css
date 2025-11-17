@@ -29,6 +29,10 @@ body {
 a {
     color:green;
 }
+a:hover,a:focus,a:active {
+    color:green;
+    text-underline-position: under;
+}
 header {
     position: relative;
     top:0;
@@ -52,6 +56,9 @@ header .navbar-toggler:active,
 header .navbar-toggler:focus,
 header .navbar-toggler:focus-visible {
     outline: transparent none 0;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
 }
 header .navbar-nav .nav-item img {
     border-radius: 3px;
@@ -84,6 +91,9 @@ header .hero img {
 main .card .card-image {
     max-height:255px;
     overflow: hidden;
+}
+main .card .card-title {
+    font-size: 1.25rem;
 }
 main .contact strong {
     float:left;
