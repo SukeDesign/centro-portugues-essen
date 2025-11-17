@@ -26,6 +26,9 @@ html {
 body {
     padding-top: 0;
 }
+a {
+    color:green;
+}
 header {
     position: relative;
     top:0;
@@ -50,6 +53,12 @@ header .navbar-toggler:focus,
 header .navbar-toggler:focus-visible {
     outline: transparent none 0;
 }
+header .navbar-nav .nav-item img {
+    border-radius: 3px;
+    max-width: 30px;
+    height: auto;
+}
+
 header .hero {
     position: relative;
     top: 55px;
