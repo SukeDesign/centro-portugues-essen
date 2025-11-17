@@ -151,15 +151,12 @@ main .contact strong {
 }
 
 @media (width >= 1024px) {
-    header nav .navbar-brand img { 
-        max-width:150px;
-    }
     header .navbar-collapse {
         margin-top: 0;
     }
     header nav .navbar-brand span { 
         display: inline;
-        padding-left: 180px;
+        padding-left: 120px;
     }
     header .hero {
         top: -20px;
@@ -185,5 +182,15 @@ main .contact strong {
     header .hero h1 {
         position: relative;
         font-size: 4rem;
+    }
+}
+
+@media (width >= 1400px) {  
+    header nav .navbar-brand img {
+        max-width: 150px;
+    }
+    header nav .navbar-brand span { 
+        display: inline;
+        padding-left: 180px;
     }
 }
