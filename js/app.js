@@ -1,6 +1,6 @@
 /****************************************************
  *  start jquery functions after loading
- *  susana@busy-rooms 20180717
+ *  sukedesign 20180717
  ****************************************************/
 $(document).ready(function(){    
     $(window).on('scroll', function() {
